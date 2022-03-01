@@ -1,0 +1,27 @@
+<section class="content__location">
+    <app-search-box 
+        class="content__search"
+        (outLocation)="searchLocation( $event )"
+        >
+    </app-search-box>
+    <div class="location__info">
+       
+        <h3>{{ dataLocation.name }}</h3>
+        <div>
+            <div class="flex__row">
+                <b>Type:</b>
+                <p>{{dataLocation.type}}</p>
+            </div>
+            <div class="flex__row">
+                <b>Dimension:</b>
+                <p>{{ dataLocation.dimension }}</p>
+            </div>
+            <div class="flex__row">
+                <b>Population:</b>
+                <p>{{ dataLocation.residents?.length }}</p>
+            </div>
+        </div>
+        
+    </div>
+    
+</section>

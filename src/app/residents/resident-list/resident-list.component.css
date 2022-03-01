@@ -1,0 +1,33 @@
+h3{
+    margin-top: 40px;
+}
+
+.btn-grup{
+    padding: 20px;
+}
+
+.btn-green-yellow{
+    background-color: #b3d54d;
+    border: 1px solid #211d1d;
+    border-radius: 5px;
+    box-shadow: 0 0 4px #299044;
+    padding: 10px;
+}
+
+.btn-green-yellow:hover{
+    box-shadow: 0px 0px 4px RGB(41,144,68), 0px 0px 5px RGB(143,200,74);
+  }
+  
+.btn-green-yellow:active{
+    box-shadow: 0px 0px 5px RGB(41,144,68) inset;
+}
+
+
+.content__residents{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,15 @@
+<h3>Residents</h3>
+<section class="content__residents animate__animated animate__fadeInUp">
+    <!--En el ngfor implementaba el pipe para el filtrado pero no sirve de esa manera
+    por la forma en como me llegan los datos-->
+    <app-resident-info 
+        *ngFor="let resident of dataLocation.residents; let i = index " 
+        [endPointResident]="dataLocation.residents[i]"
+    >
+    </app-resident-info>
+</section>
+<div class="btn-group">
+    <button class="btn-green-yellow" (click)="previousPage()">Anteriores</button>
+    &nbsp;
+    <button class="btn-green-yellow" (click)="nextPage()">Siguientes</button>
+</div>

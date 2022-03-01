@@ -1,14 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { LocationModule } from './location/location.module';
+import { ResidentsModule } from './residents/residents.module';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    LocationModule,
+    ResidentsModule
+  ],
+  exports: [
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

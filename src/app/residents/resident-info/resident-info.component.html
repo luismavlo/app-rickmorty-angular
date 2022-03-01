@@ -1,0 +1,27 @@
+<div class="card-resident animate__animated animate__fadeInUp">
+    <div class="img__resident">
+        <img [src]="this.residentInfo.image" alt="">
+    </div>
+    <div class="content__info">
+        <h4>{{this.residentInfo.name}}</h4>
+        <div class="status">
+            <div class="circle"></div>
+            <h5>{{this.residentInfo.status}} - {{this.residentInfo.species}}</h5>
+        </div>
+        
+        <p>
+            <b>Origin</b>
+        </p>
+        <p>
+            {{this.residentInfo.location?.name}}
+        </p>
+        <p>
+            <b>Episodes where appear</b>
+        </p>
+        <div>
+            <small *ngFor="let episode of this.residentInfo.episode">
+                {{ episode.split('/')[5] }}
+            </small>
+        </div>
+    </div>
+</div>
